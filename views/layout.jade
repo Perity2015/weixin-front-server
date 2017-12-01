@@ -1,7 +1,20 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+        title= title
+        link(rel='stylesheet', href='http://pekon.oss-cn-shanghai.aliyuncs.com/weixin-front/index.css')
+        script(src="http://pekon.oss-cn-shanghai.aliyuncs.com/common/fastclick.js")
+        script.
+            if (!window.Promise) {
+                document.writeln('<script src="http://pekon.oss-cn-shanghai.aliyuncs.com/common/promise.js"' + '>' + '<' + '/' + 'script>');
+            }
+            if ('addEventListener' in document) {
+                document.addEventListener('DOMContentLoaded', function () {
+                    FastClick.attach(document.body);
+                }, false);
+            }
+    body
+        block content

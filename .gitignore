@@ -3,3 +3,5 @@
 .idea/
 node_modules/
 *.log.*
+server/config/
+npm-debug.log
