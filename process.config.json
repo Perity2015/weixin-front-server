@@ -1,23 +1,6 @@
 {
   "apps": [
     {
-      "name": "weixin-front",
-      "script": "./app.js",
-      "watch": true,
-      "instances": 1,
-      "exec_mode": "cluster",
-      "max_memory_restart": "200M",
-      "ignore_watch": [
-        "./node_modules"
-      ],
-      "env": {
-        "NODE_ENV": "development"
-      },
-      "env_production": {
-        "NODE_ENV": "production"
-      }
-    },
-    {
       "name": "weixin-front-server",
       "script": "./server.js",
       "watch": true,
@@ -37,6 +20,10 @@
     {
       "name": "weixin-front-init",
       "script": "./init.js"
+    },
+    {
+      "name": "weixin-front",
+      "script": "./app.js"
     }
   ]
 }

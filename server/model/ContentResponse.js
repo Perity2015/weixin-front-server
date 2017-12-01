@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const sequelize = require('../control/lib/sequelize');
+const sequelize = require('../control/lib/sequelizeLib');
 
 const ContentResponse = sequelize.define('mobile_members', {
     url: {
